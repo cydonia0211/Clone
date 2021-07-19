@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <h2 class="clock">00:00:00</h2>
+    <form class="login-form hidden">
+        <input 
+        type="text"
+        required maxlength="15" 
+        placeholder="Please write your name">
+        <input type="submit" value="Log in"/>
+    </form>
+    <h1 class="greeting hidden"></h1>
+    <div class="quote">
+        <span id="quote"></span>
+        <span id="author"></span>
+    </div>
+    <form class="todo-form">
+        <input type="text" placeholder="Please write your todo-list" required>
+    </form>
+    <ul class="todo-list"></ul>
+    <div class="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Notice!! 
+        JS querySelector (class or id)를 통해 태그값을 불러오는 경우
+        querySelector는 가장 첫 부분 (예를 들어 하나의 태그에 두 개의 class1, class2 가
+        있다고 가정하면 class1) 만을 가져오기 때문에 querySelector로 class2를 불러오려고
+        하면 값을 불러오지 못함.
+
+        + 보통 class는 두 개를 선언하는 것이 아니라 , class = "name1 name2" 이런식으로 
+        공백을 통해 구분해준다.
+    -->
+    <script src="JS/greetings.js"></script>
+    <script src="JS/clock.js"></script>
+    <script src="JS/quote.js"></script>
+    <script src="JS/background.js"></script>
+    <script src="JS/todo.js"></script>
+    <script src="JS/weather.js"></script>
+</body>
+</html>
